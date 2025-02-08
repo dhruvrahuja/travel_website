@@ -64,31 +64,32 @@
                 <div class="contact">
                     <h1>Contact Us</h1>
                     <p>We would love to plan your next trip! Fill your details</p>
-                    <div class="input_box">
-                        <input type="text" name="" id="" placeholder="Full Name">
-                    </div>
-                    <div class="input_box">
-                        <input type="text" name="" id="" placeholder="Contact Number">
-                    </div>
-                    <div class="input_box">
-                        <input type="text" name="" id="" placeholder="Destination">
-                    </div>
-                    <div class="input_box">
-                        <input type="text" name="" id="" placeholder="Number of People">
-                    </div>
-                    <div class="input_box">
-                        <label for="arrival">Arrival Date</label>
-                        <input type="date" id="arrival">
-                    </div>
+                    <form action="https://formspree.io/f/xrbelykn" method="POST">
+                        <div class="input_box">
+                            <input type="text" name="full_name" placeholder="Full Name" required>
+                        </div>
+                        <div class="input_box">
+                            <input type="text" name="contact_number" placeholder="Contact Number" required>
+                        </div>
+                        <div class="input_box">
+                            <input type="text" name="destination" placeholder="Destination" required>
+                        </div>
+                        <div class="input_box">
+                            <input type="text" name="num_people" placeholder="Number of People" required>
+                        </div>
+                        <div class="input_box">
+                            <label for="arrival">Arrival Date</label>
+                            <input type="date" id="arrival" name="arrival_date" required>
+                        </div>
+                        <div class="input_box">
+                            <label for="departure">Departure Date</label>
+                            <input type="date" id="departure" name="departure_date" required>
+                        </div>
+                        <div style="width: 15%; margin-top: 10px; margin-bottom: 10px;">
+                            <button type="submit" class="click">Submit</button>
+                        </div>
+                    </form>
                     
-                    <div class="input_box">
-                        <label for="departure">Departure Date</label>
-                        <input type="date" id="departure">
-                    </div>
-                    <div style="width: 15%; margin-top: 10px; margin-bottom: 10px;">
-                        <div class="click">Submit</div>
-                    </div>
-                </div>
             </div>
         </div>
 
